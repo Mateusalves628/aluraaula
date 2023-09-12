@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decodificador de Texto</title>
+    <script>
+        function decodeText() {
+            var encodedText = document.getElementById("encodedText").value;
+            var decodedText = decodeURIComponent(encodedText);
+            document.getElementById("decodedText").textContent = decodedText;
+        }
+    </script>
+</head>
+<body>
+    <h1>Decodificador de Texto</h1>
+    <label for="encodedText">Texto Codificado:</label>
+    <input type="text" id="encodedText">
+    <button onclick="decodeText()">Decodificar</button>
+    <p id="decodedText"></p>
+</body>
+</html>
